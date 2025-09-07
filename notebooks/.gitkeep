@@ -1,3 +1,6 @@
 ## Cleaning data
 - checked for Null values 
--  df1.isnull().sum()
+    - df1.isnull().sum()
+Combined the 'year' and 'month' columns to a single 'Date' column, formatted YYMMDD
+df1= pd.to_datetime(df1['year']as_type(str) + '-' + df1['month']as_type(str) + '-01', format = '%Y-%m-%d'
+
