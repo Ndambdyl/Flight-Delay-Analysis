@@ -13,12 +13,16 @@ It demonstrates an **end-to-end data workflow**: data collection, cleaning, anal
 
 ## 2. Project Workflow
 1. **Data Collection**  
-   - Source: [Bureau of Transportation Statistics](https://transtats.bts.gov/)  
-   - Format: CSV (flight delay records)
+   - Source: Bureau of Transportation Statistics (BTS) On-Time Performance Dataset
+   - Years: Filtered to 2023, 2024, 2025
+   - Variables: Airline, Origin/Destination Airport, Flight Date, Departure Delay, Arrival Delay, Cancellation Reasons
+   - file: `Airline_Delay_Cause.xlsl`
+   - Stored in `data`
 
 2. **Data Cleaning & Preparation**  
    - Handle missing values  
-   - Convert date/time formats  
+   - Convert date/time formats
+   		- Converted 'Year' and 'Month' columns to a single 'Date' column to ease filtering dates.
    - Create calculated columns (e.g., `Is_Delayed`, `Delay_Category`)  
 
 3. **Exploratory Data Analysis (EDA)**  
